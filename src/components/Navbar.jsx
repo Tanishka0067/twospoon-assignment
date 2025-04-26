@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-around items-center pt-4 pb-4 pl-8 bg-white font-[inter] font-medium border-b-2 border-[#E5E5E5]">
+    <nav className="flex justify-around sticky top-0 z-50 items-center pt-4 pb-4 pl-8 bg-white font-[inter] font-medium border-b-2 border-[#E5E5E5]">
       <div className="logo flex-shrink-0">
         <img src={logo} alt="logo" className="h-6" />
       </div>
