@@ -7,7 +7,8 @@ import logo from "../assets/Logowhite.png";
 
 const Footer = () => {
   return (
-    <div className=" sm:bg-black bg-[#181313] text-white py-32 px-8 lg:px-20 font-[inter] font-light text-sm tracking-wide text-nowrap">
+    <div className="w-full bg-black text-white py-32 px-4 sm:px-8 lg:px-20 font-[inter] font-light text-sm tracking-wide">
+      {" "}
       <div className=" flex flex-col gap-16 ">
         <div className="flex lg:flex-row flex-col justify-around items-center lg:items-start gap-10">
           <div className="flex flex-col justify-center lg:items-start items-center gap-6">
@@ -55,8 +56,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center sm:justify-start sm:pl-20 gap-10 text-2xl ">
-          <FaTwitter className="hover:text-gray-400 cursor-pointer"  />
+        <div className="flex justify-center lg:justify-start lg:pl-20 gap-10 text-2xl">
+          <FaTwitter className="hover:text-gray-400 cursor-pointer" />
           <FaFacebookF className="hover:text-gray-400 cursor-pointer" />
           <IoLogoTiktok className="hover:text-gray-400 cursor-pointer" />
           <PiInstagramLogoFill className="hover:text-gray-400 cursor-pointer" />
