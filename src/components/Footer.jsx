@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center lg:justify-start lg:pl-10 gap-10 text-2xl">
+        <div className="flex justify-center lg:justify-start lg:pl-20 gap-10 text-2xl">
           <FaTwitter className="hover:text-gray-400 cursor-pointer" />
           <FaFacebookF className="hover:text-gray-400 cursor-pointer" />
           <IoLogoTiktok className="hover:text-gray-400 cursor-pointer" />
