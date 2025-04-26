@@ -3,63 +3,59 @@ import card from "../assets/card.png";
 const Payment = () => {
   return (
     <div>
-      <div className="w-full">
+      <div className="w-full ">
         <h2 className="text-lg font-medium mb-4">Payment</h2>
 
-        <div className="flex border-b mb-6">
-          <button className={`pb-2 px-2 'border-b-2 border-black font-medium`}>
+        <div className="flex flex-row justify-between mb-12 w-3/4">
+          <button className="pb-2  border-b-2 border-black font-medium">
             Credit Card
           </button>
-          <button
-            className={`pb-2 px-2 ml-4 'border-b-2 border-black font-mediumtext-gray-500'}`}
-          >
+          <button className="pb-2  ml-4  border-black font-medium text-gray-500">
             PayPal
           </button>
-          <button
-            className={`pb-2 px-2 ml-4 border-b-2 border-black font-medium text-gray-500'}`}
-          >
+          <button className="pb-2  ml-4  border-black font-medium text-gray-500">
             PayPal Credit
           </button>
         </div>
 
-        <div className="mb-6">
-          <img src={card} alt="" />
+        <div className="mb-6 flex  flex-col justify-start items-start gap-6">
+          <img src={card} alt="card" className="w-3/4" />
 
           <div className="space-y-4">
             <input
               type="text"
               placeholder="Cardholder Name"
-              className="w-full p-3 border rounded text-gray-400"
+              className="w-full p-3 border-2 border-gray-200 rounded-sm text-gray-500"
             />
             <input
               type="text"
               placeholder="Card Number"
-              className="w-full p-3 border rounded text-gray-400"
+              className="w-full p-3 border-2 border-gray-200 rounded-sm text-gray-500"
             />
             <div className="flex space-x-4">
               <input
                 type="text"
                 placeholder="Exp Date"
-                className="w-1/2 p-3 border rounded text-gray-400"
+                className="w-1/2 p-3 border-2 border-gray-200 rounded-sm text-gray-500"
               />
               <input
                 type="text"
                 placeholder="CVV"
-                className="w-1/2 p-3 border rounded text-gray-400"
+                className="w-1/2 p-3 border-2 border-gray-200 rounded-sm text-gray-500"
               />
             </div>
           </div>
         </div>
 
         <div className="flex items-center mb-6">
-          <input type="checkbox" checked="true" className="h-4 w-4 black" />
-          <label htmlFor="sameAddress" className="ml-2">
+          <input type="checkbox" className="h-4 w-4 accent-black" />
+          <label htmlFor="sameAddress" className="ml-2 text-sm font-semibold">
             Same as billing address
           </label>
         </div>
 
         <div className="flex space-x-4">
-          <button className="w-1/2 py-3 border border-gray-300 rounded font-medium">
+          <button className="w-1/2 py-3 border border-black rounded font-medium">
             Back
           </button>
           <button className="w-1/2 py-3 bg-black text-white rounded font-medium">

@@ -4,7 +4,7 @@ import headphones from "../assets/headphones.png";
 import watch from "../assets/watch.png";
 const Summary = () => {
   return (
-    <div className="sm:flex hidden flex-col px-12 p-6 border-2 border-gray-100  bg-white rounded-xl font-[inter] tracking-wide">
+    <div className="sm:flex hidden flex-col px-12 p-6 border-2 border-gray-200  bg-white rounded-xl font-[inter] tracking-wide">
       <h2 className="text-2xl font-medium mb-4 ">Summary</h2>
 
       <div className="space-y-4">
@@ -62,7 +62,7 @@ const Summary = () => {
           <span>$29</span>
         </div>
 
-        <div className="flex justify-between  pt-3 border-t">
+        <div className="flex justify-between  pt-3 ">
           <span className="font-bold">Total</span>
           <span className="font-extrabold">$2426</span>
         </div>

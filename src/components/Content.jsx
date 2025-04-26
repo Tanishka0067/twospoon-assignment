@@ -4,7 +4,7 @@ import Summary from "./Summary";
 
 const Content = () => {
   return (
-    <div className="flex flex-row justify-around">
+    <div className="flex flex-row justify-around mb-18">
       <Summary />
       <Payment />
     </div>
