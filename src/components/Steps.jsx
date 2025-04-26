@@ -1,16 +1,16 @@
 import React from "react";
-import location from "../assets/location.png";
+import location from "../assets/Location.png";
 import shipping from "../assets/Shipping.png";
 import payment from "../assets/Payment.png";
 const Steps = () => {
   return (
     <>
-      <div className="flex flex-row justify-around items-start gap-30 py-20 font-[inter] tracking-wide font-medium">
-        <div className="step flex flex-row items-center justify-center gap-2">
-          <div className="icon">
+      <div className="flex flex-row justify-around items-start sm:gap-30 py-20 font-[inter] tracking-wide font-medium">
+        <div className="step sm:flex flex-row items-center justify-center gap-2 hidden ">
+          <div className="icon ">
             <img src={location} alt="address" className="w-6.5" />
           </div>
-          <div className="text text-[#B2B2B2] ">
+          <div className="text  text-[#B2B2B2] ">
             <div className="num text-sm leading-[1]">Step 1</div>
             <div className="name text-lg">Address</div>
           </div>

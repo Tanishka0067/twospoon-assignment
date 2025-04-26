@@ -13,19 +13,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex flex-row justify-between items-center p-2.5 bg-white font-[inter] font-medium px-15  border-b-2 border-[#E5E5E5] ">
+    <nav
+      className="flex flex-row justify-around items-center p-2
+     bg-white font-[inter] font-medium px-18 mt-2 border-b-2 border-[#E5E5E5] "
+    >
       <div className="logo ">
         <img src={logo} alt="logo" className="h-6" />
       </div>
       <div className="lg:hidden">
-        <button onClick={toggleMenu} className="text-white">
+        <button onClick={toggleMenu}>
           <RxHamburgerMenu className="text-black cursor-pointer" size={30} />
         </button>
       </div>
       <div className="lg:flex hidden flex-row gap-14 pr-6 items-center justify-around">
         <div className="searchbar relative w-sm">
           <FiSearch
-            className="absolute left-3  top-1/2 transform -translate-y-1/2 text-[#656565] cursor-pointer"
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 text-[#656565] cursor-pointer"
             size={20}
           />
           <input
@@ -47,7 +50,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="icons">
-          <ul className="flex flex-row gap-7 font-extralight text-3xl">
+          <ul className="flex flex-row gap-6 font-extralight text-3xl">
             <li className="cursor-pointer font-extralight hover:text-black">
               <IoMdHeartEmpty />
             </li>
@@ -62,16 +65,16 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <ul className="lg:hidden p-4 ">
-          <li href="#home" className="block py-2">
-            Home
+          <li className="block py-2">
+            Home{" "}
           </li>
-          <li href="#about" className="block py-2">
+          <li className="block py-2">
             About
           </li>
-          <li href="#contact" className="block py-2 text-nowrap">
+          <li className="block py-2 text-nowrap">
             Contact Us
           </li>
-          <li href="#services" className="block py-2">
+          <li className="block py-2">
             Blog
           </li>
         </ul>

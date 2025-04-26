@@ -4,14 +4,14 @@ import headphones from "../assets/headphones.png";
 import watch from "../assets/watch.png";
 const Summary = () => {
   return (
-    <div className="sm:flex hidden flex-col px-6 p-6 border-2 border-gray-200  bg-white rounded-xl font-[inter] tracking-wide">
+    <div className="sm:flex hidden flex-col px-6 p-6 border-2  border-gray-200  bg-white rounded-xl font-[inter] tracking-wide">
       <h2 className="text-2xl font-medium mb-4 ">Summary</h2>
 
       <div className="space-y-4">
         <div className="flex items-center justify-between bg-gray-100 p-4 px-4 rounded-xl">
           <div className="flex items-center gap-6">
             <img src={phone} alt="phone" />
-            <span className="font-medium">Apple iPhone 14 Pro Max 128Gb</span>
+            <span className="font-medium ">Apple iPhone 14 Pro Max 128Gb</span>
           </div>
           <span className="font-extrabold pl-16 ">$1399</span>
         </div>
