@@ -17,12 +17,12 @@ const Navbar = () => {
       <div className="logo ">
         <img src={logo} alt="logo" className="h-6" />
       </div>
-      <div className="sm:hidden">
+      <div className="lg:hidden">
         <button onClick={toggleMenu} className="text-white">
           <RxHamburgerMenu className="text-black cursor-pointer" size={30} />
         </button>
       </div>
-      <div className="sm:flex hidden flex-row gap-14 pr-6 items-center justify-around">
+      <div className="lg:flex hidden flex-row gap-14 pr-6 items-center justify-around">
         <div className="searchbar relative w-sm">
           <FiSearch
             className="absolute left-3  top-1/2 transform -translate-y-1/2 text-[#656565] cursor-pointer"
@@ -61,7 +61,7 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <ul className="sm:hidden  bg-black p-4 text-white">
+        <ul className="lg:hidden p-4 ">
           <li href="#home" className="block py-2">
             Home
           </li>

@@ -4,60 +4,62 @@ import { IoLogoTiktok } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import logo from "../assets/Logowhite.png";
+
 const Footer = () => {
   return (
-    <div className="bg-black text-white py-28 px-44 font-[inter] font-light text-sm tracking-wide">
-      <div className=" flex flex-col ">
-        <div className="flex sm:flex-row flex-col justify-around items-start">
-          <div className="flex flex-col justify-center items-start gap-6">
+    <div className=" sm:bg-black bg-[#181313] text-white py-32 px-8 lg:px-20 font-[inter] font-light text-sm tracking-wide text-nowrap">
+      <div className=" flex flex-col gap-16">
+        <div className="flex lg:flex-row flex-col justify-around items-center lg:items-start gap-10">
+          <div className="flex flex-col justify-center lg:items-start items-center gap-6">
             <div>
               <img src={logo} alt="logo" />
             </div>
-            <div className="text leading-[171%] text-center sm:text-start">
-              We are a residential interior design firm located in <br/>Portland. Our
-              boutique-studio offers more than
+            <div className="text leading-[171%] text-center sm:text-start text-nowrap">
+              We are a residential interior design firm located in <br />
+              Portland. Our boutique-studio offers more than
             </div>
           </div>
           <div>
-            <ul>
-              <li className="font-bold">Service</li>
-              <li className="py-2">Bonus program</li>
-              <li className="py-2">Gift cards</li>
-              <li className="py-2">Credit and payment</li>
-              <li className="py-2">Service contracts</li>
-              <li className="py-2">Non-cash account</li>
-              <li className="py-2">Payment</li>
+            <ul className="flex flex-col items-center lg:items-start">
+              <li className="font-bold mb-4">Service</li>
+              {[
+                "Bonus program",
+                "Gift cards",
+                "Credit and payment",
+                "Service contracts",
+                "Non-cash account",
+                "Payment",
+              ].map((item, index) => (
+                <li key={index} className="py-2">
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
           <div>
-            <ul >
-              <li className="font-bold">Assistance to the buyer</li>
-              <li className="py-2">Find an order</li>
-              <li className="py-2">Terms of delivery</li>
-              <li className="py-2">Exchange and return of goods</li>
-              <li className="py-2">Guarantee</li>
-              <li className="py-2">Frequently asked questions</li>
-              <li className="py-2">Terms of use of the site</li>
+            <ul className="flex flex-col items-center lg:items-start">
+              <li className="font-bold mb-4">Assistance to the buyer</li>
+              {[
+                "Find an order",
+                "Terms of delivery",
+                "Exchange and return of goods",
+                "Guarantee",
+                "Frequently asked questions",
+                "Terms of use of the site",
+              ].map((item, index) => (
+                <li key={index} className="py-2">
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <div className="w-min px-16">
-          <ul className="flex flex-row justify-start gap-10 text-2xl ">
-            <li>
-              <FaTwitter />
-            </li>
-
-            <li>
-              <FaFacebookF />
-            </li>
-            <li>
-              <IoLogoTiktok />
-            </li>
-            <li>
-              <PiInstagramLogoFill />
-            </li>
-          </ul>
+        <div className="flex justify-center sm:justify-start sm:pl-20 gap-10 text-2xl ">
+          <FaTwitter className="hover:text-gray-400 cursor-pointer"  />
+          <FaFacebookF className="hover:text-gray-400 cursor-pointer" />
+          <IoLogoTiktok className="hover:text-gray-400 cursor-pointer" />
+          <PiInstagramLogoFill className="hover:text-gray-400 cursor-pointer" />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import payment from "../assets/Payment.png";
 const Steps = () => {
   return (
     <>
-      <div className="flex flex-row justify-evenly items-center gap-10 p-14 font-[inter] tracking-wide font-medium">
+      <div className="flex flex-row justify-around items-start gap-30 py-20 font-[inter] tracking-wide font-medium">
         <div className="step flex flex-row items-center justify-center gap-2">
           <div className="icon">
             <img src={location} alt="address" className="w-6.5" />

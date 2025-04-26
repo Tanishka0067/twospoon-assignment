@@ -25,23 +25,23 @@ const Payment = () => {
             <input
               type="text"
               placeholder="Cardholder Name"
-              className="w-full p-3 border-2 border-gray-200 rounded-sm text-gray-500"
+              className="w-full p-3 border-2 border-gray-200 rounded-md text-gray-500"
             />
             <input
               type="text"
               placeholder="Card Number"
-              className="w-full p-3 border-2 border-gray-200 rounded-sm text-gray-500"
+              className="w-full p-3 border-2 border-gray-200 rounded-md text-gray-500"
             />
             <div className="flex space-x-4">
               <input
                 type="text"
                 placeholder="Exp Date"
-                className="w-1/2 p-3 border-2 border-gray-200 rounded-sm text-gray-500"
+                className="w-1/2 p-3 border-2 border-gray-200 rounded-md text-gray-500"
               />
               <input
                 type="text"
                 placeholder="CVV"
-                className="w-1/2 p-3 border-2 border-gray-200 rounded-sm text-gray-500"
+                className="w-1/2 p-3 border-2 border-gray-200 rounded-md text-gray-500"
               />
             </div>
           </div>
@@ -49,7 +49,7 @@ const Payment = () => {
 
         <div className="flex items-center mb-6">
           <input type="checkbox" className="h-4 w-4 accent-black" />
-          <label htmlFor="sameAddress" className="ml-2 text-sm font-semibold">
+          <label htmlFor="sameAddress" className="ml-2 text-md font-semibold">
             Same as billing address
           </label>
         </div>
