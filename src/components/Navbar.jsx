@@ -24,7 +24,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className="hidden lg:flex flex-1 justify-between items-center max-w-[1200px] mx-8">
+      <div className="hidden lg:flex flex-1 gap-4 justify-around items-center max-w-[1200px] mx-8">
         <div className="searchbar relative w-full max-w-[400px]">
           <FiSearch
             className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#656565] cursor-pointer"

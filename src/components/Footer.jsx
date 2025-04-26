@@ -7,7 +7,7 @@ import logo from "../assets/Logowhite.png";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black text-white py-32 px-4 sm:px-8 lg:px-20 font-[inter] font-light text-sm tracking-wide">
+    <div className="w-full  bg-black text-white py-32 px-4 sm:px-8 lg:px-20 font-[inter] font-light text-sm tracking-wide">
       {" "}
       <div className=" flex flex-col gap-16 ">
         <div className="flex lg:flex-row flex-col justify-around items-center lg:items-start gap-10">
